@@ -5,7 +5,7 @@ The system is typically implemented using a camera installed on the dashboard th
 
 Once the system detects signs of drowsiness, it can trigger an alarm to alert the driver, activate a vibration system to wake the driver, or even take control of the vehicle and guide it to a safe stop. By alerting drivers to their drowsiness and taking proactive measures to prevent accidents, driver drowsiness detection using machine learning has the potential to save countless lives and prevent serious injuries on the road.
 
-# For code check mater branch
+# For code check master branch
 
 Step 1 – Take image as input from a camera.
 
