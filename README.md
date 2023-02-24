@@ -5,7 +5,7 @@ The system is typically implemented using a camera installed on the dashboard th
 
 Once the system detects signs of drowsiness, it can trigger an alarm to alert the driver, activate a vibration system to wake the driver, or even take control of the vehicle and guide it to a safe stop. By alerting drivers to their drowsiness and taking proactive measures to prevent accidents, driver drowsiness detection using machine learning has the potential to save countless lives and prevent serious injuries on the road.
 
-
+# For code check mater branch
 
 Step 1 – Take image as input from a camera.
 
@@ -30,8 +30,8 @@ Step 1 – Take Image as Input from a Camera
 With a webcam, we will take images as input. So to access the webcam, we made an infinite loop that will capture each frame. We use the method provided by OpenCV, cv2.VideoCapture(0) to access the camera and set the capture object (cap). cap.read() will read each frame and we store the image in a frame variable.
 
 cap=cv2.VideoCapture(0)
-# if cap.isOpened():
-#     cap=cv2.VideoCapture(0)
+ if cap.isOpened():
+     cap=cv2.VideoCapture(0)
 
 Step 2 – Detect Face in the Image and Create a Region of Interest (ROI)
 
@@ -68,8 +68,8 @@ path="haarcascade_frontalface_default.xml"
 faceCascade=cv2.CascadeClassifier(cv2.data.haarcascades+'haarcascade_frontalface_default.xml')
 
 cap=cv2.VideoCapture(0)
-# if cap.isOpened():
-#     cap=cv2.VideoCapture(0)
+ if cap.isOpened():
+     cap=cv2.VideoCapture(0)
 if not cap.isOpened():
     raise IOError("cannot open webcam")
 
